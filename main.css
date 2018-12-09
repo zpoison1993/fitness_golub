@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gora';
+    src: url('./fonts/gora-free-webfont.woff2') format('woff2'),
+         url('./fonts/gora-free-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    height: 100%;
+    margin:0;
+    font-family: "open_sans", Helvetica, sans-serif;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.wrapper {
+    min-width: 1100px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 77px;
+    background: #131415;
+    color: #ffffff;
+
+}
+
+.container-header{
+    width: 1060px;
+    margin: 0 auto;
+   
+   
+}
+
+.logo-image {
+    font-family: 'gora';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+   
+    letter-spacing: 0.1em;
+    color: #e98c13;
+
+}
+.logo--header{
+    float: left;
+    max-width: 170px;
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+.menu {
+    /*margin-left: auto;
+    margin-right: auto;*/
+    width: 30%;
+    display: inline-block;
+   
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+ul.menu__list{
+    margin: 0;
+    padding: 0;
+
+}
+
+li.menu__item{
+    display: inline-block;
+    
+    
+    width: 25%;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    
+    
+}
+.menu__link {
+    display: inline-block;
+    text-decoration: none; 
+    color:inherit;
+}
+
+.menu__icon{
+    display: inline-block;
+    background: center center no-repeat;
+    width: 19px;
+    height: 19px;
+   
+}
+
+.menu__icon--main {
+    background-image: url(./img/main_icon.png)
+}
+
+.menu__icon--reviews {
+    background-image: url(./img/feed_icon.png)
+}
+
+.menu__icon--service {
+    background-image: url(./img/service_icon.png)
+}
+
+
+
+.contacts {
+    display: block;
+    float:right;
+    margin-right: 20px;
+    margin-top:20px; 
+    text-align: right;
+}
+.contacts__phone {
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    font-style: normal;
+}
+.contacts__schedule {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: rgba(248, 149, 19, 0.8);
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: inherit;
+}
+
+.container-main{
+    width: 1100px;
+    margin: 0;
+
+   
+}
+
+.main-image{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 79px;
+    margin-bottom: 58px;
+    width: 740px;
+    height: 486px;
+    background-image: url(./img/Image.png);
+}
+
+
+
+.features {
+    background:#131415;
+    height:570px;
+    width:100%;
+    color: #ffffff;
+}
+
+
+
+
+.title {
+    /*max-height:55px;*/
+    text-align: center;
+    /*margin-top: 65px;
+    font-family: open-sans;*/
+    font-weight: bold;
+    font-style: normal;
+    font-size: 49px;
+    letter-spacing: 1.5px;
+   color: #131415;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.title--white{
+    color: #ffffff;
+    padding-top: 47px;
+    margin-bottom: 48px;
+}
+
+ul.features__list {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-inline-start: 0;
+}
+
+li.features__list-item {
+    display: inline-block;
+    line-height: 1.88em;
+    text-align: center;
+    font-size: 18px;
+    max-width: 33%;
+    vertical-align: top;
+}
+
+.features__list-image {
+    width: 68px;
+    height: 68px;
+    background: #f89513 center center no-repeat;
+    border-radius: 50%;
+    margin-left: 38%;
+  }
+
+.features__list-image--unique {
+    background-image: url('./img/flower.png');
+  }
+  
+.features__list-image--premium {
+    background-image: url('./img/service_icon.png');
+  }
+  
+.features__list-image--coach {
+    background-image: url('./img/painter-palette.png');
+  }
+
+.footer {
+   
+    width: 100%;
+    min-height: 77px;
+    margin-top: 60px;
+    background: #131415;
+    color: white;
+}
+
