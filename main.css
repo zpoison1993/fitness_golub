@@ -174,6 +174,9 @@ li.menu__item{
     text-decoration: underline;
     font-family: inherit;
 }
+.contacts__schedule:hover {
+    color: #ffffff;
+  }
 
 .container-main{
     width: 1100px;
@@ -196,13 +199,15 @@ li.menu__item{
 
 .features {
     background:#131415;
-    height:570px;
-    width:100%;
+    height:570px;  
     color: #ffffff;
 }
 
-
-
+.container--features {
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .title {
     /*max-height:55px;*/
@@ -233,10 +238,10 @@ ul.features__list {
 
 li.features__list-item {
     display: inline-block;
-    line-height: 1.88em;
+    line-height: 1.9em;
     text-align: center;
     font-size: 18px;
-    max-width: 33%;
+    width: 30%;
     vertical-align: top;
 }
 
@@ -249,16 +254,36 @@ li.features__list-item {
   }
 
 .features__list-image--unique {
-    background-image: url('./img/flower.png');
+    background-image: url(./img/flower.png);
   }
   
 .features__list-image--premium {
-    background-image: url('./img/service_icon.png');
+    background-image: url(./img/service_icon.png);
   }
   
 .features__list-image--coach {
-    background-image: url('./img/painter-palette.png');
+    background-image: url(./img/painter-palette.png);
   }
+
+.features__list-heading {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+ ul.features__list-bullets {
+    list-style-type: disc;
+    text-align: left;
+    padding-inline-start: 0px;
+    margin-left: 50px;
+ }
+
+ li {
+    padding-left: 20px;
+ }
+  
 
 .footer {
    
@@ -268,4 +293,20 @@ li.features__list-item {
     background: #131415;
     color: white;
 }
+
+.news > .title {
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+ul.news__list {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+  }
+
+.latest-news-item:not(:last-child) {
+    border-bottom: 2px solid #f5f5f5;
+  }
+
 
