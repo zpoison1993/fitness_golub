@@ -15,7 +15,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <span class="menu__link">
+                            <span class="menu__link  menu__link--active">
                                 <span class="menu__icon menu__icon--main"></span>
                                 <span class="menu__title">Главная</span>
                             </span>
@@ -104,12 +104,13 @@
                 </section>
                 
                 <section class="news">
+                  <div class="container container--news">
                     <h2 class="title">ПОСЛЕДНИЕ НОВОСТИ</h2>
                     <ul class="news__list">
                         <li class="news__item">
-                            <div class="news__image">
-                                <img src="" class="news__image-pic" alt="">
-                            </div>
+                            
+                                <img src="./img/news_1.jpg" class="news__image-pic" alt="">
+                           
                             <div class="news__description">
                                 <time class="news__date">12.10.2016</time>
                                 <h3 class="news__heading">Похудение с помощью бодибилдинга!</h3>
@@ -119,9 +120,9 @@
                             </div>
                         </li>
                         <li class="news__item">
-                            <div class="news__image">
-                                <img src="" class="news__image-pic" alt="">
-                            </div>
+                            
+                                <img src="./img/news_2.jpg" class="news__image-pic" alt="">
+                            
                             <div class="news__description">
                                 <time class="news__date">01.02.2016</time>
                                 <h3 class="news__heading">Заражай друзей, получай призы!</h3>
@@ -131,43 +132,51 @@
                             </div>
                         </li>
                         <li class="news__item">
-                            <div class="news__image">
-                                <img src="" class="news__image-pic" alt="">
-                            </div>
+                            
+                                <img src="./img/news_3.jpg" class="news__image-pic" alt="">
+                            
                             <div class="news__description">
                                 <time class="news__date">22.12.2015</time>
                                 <h3 class="news__heading">Фрилансер? Выпрями спину!</h3>
                                 <p class="news__text">
-                                    Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора!
+                                    Создайте рабочее место под себя. Вот этот инструмент поможет
+                                    определить, что подходит именно вам и вашему организму. Используйте
+                                    специальную подставку для ноутбука, если вы проводите за ним больше
+                                    2 часов. Настройте высоту и яркость монитора!
                                 </p>
                             </div>
                         </li>
                     </ul>
                     <aside class="sidebar">
-                            <div class="sidebar__text">
-                                <h3 class="sidebar__heading">ТОП НОВОСТЕЙ <span class="sidebar__month">ЗА СЕНТЯБРЬ</span> </h3>
-                            </div>
+                            <h3 class="sidebar__heading">ТОП НОВОСТЕЙ 
+                                    
+                                    <span class="sidebar__month">ЗА СЕНТЯБРЬ</span> </h3>
+                            
                             <ul class="sidebar__list">
                                 <li class="sidebar__image">
-                                    <img src="" class="sidebar__image-pic" alt="1">
+                                    <img src="./img/top_sep_1.jpg" class="sidebar__image-pic" alt="1">
                                 </li>
                                 <li class="sidebar__image">
-                                        <img src="" class="sidebar__image-pic" alt="2">
+                                        <img src="./img/top_sep_2.jpg" class="sidebar__image-pic" alt="2">
                                 </li>
                                 <li class="sidebar__image">
-                                        <img src="" class="sidebar__image-pic" alt="3">
+                                        <img src="./img/top_sep_3.jpg" class="sidebar__image-pic" alt="3">
                                 </li>
                             </ul>
                     </aside>
+                  </div>
                 </section>
 
                 <div class="pagination">
                     <div class="pagination__display">Страница 1 из 7</div>
-                    <div class="pagination__controlls">
-                        <a href="" class="pagination__prev"><</a>
+                    <div class="pagination__controlls clearfix">
+                        
+                            <a href="" class="pagination__prev-link"></a>
+                        
+                        
                         <ul class="pagination__list">
-                            <li class="pagination__item">
-                                <a href="#" class="pagination__link">1</a>
+                            <li class="pagination__item pagination__item--active">
+                                <a href="#" class="pagination__link pagination__link--active">1</a>
                             </li>
                             <li class="pagination__item">
                                 <a href="#" class="pagination__link">2</a>
@@ -188,7 +197,9 @@
                                 <a href="#" class="pagination__link">7</a>
                             </li>
                         </ul>
-                        <a href="" class="pagination__next">></a>
+                        
+                                <a href="" class="pagination__next-link"></a>
+                          
                     </div>
                 </div>
               
@@ -197,19 +208,19 @@
 
 
 
-            <footer>
+            <footer class="footer">
                 <div class="container container-footer">
                 <div class="production">
                     <p class="production__text">
                         Сделано с любовью и старанием
-                        на курсе "HTML + CSS" в <u><b>LoftSchool.</b></u>
-                        Автор работы: <b>Прохладов Вадим</b>
+                        на курсе "HTML + CSS" в 
+                        <a href="https://loftschool.com/" class="production__link production__link--underlined">LoftSchool</a>
+                        Автор работы: 
+                        <a href="https://vk.com/z_poison" class="production__link">Голубь Владимир</a>
                     </p>
                 </div>
                 
-                <div class="logo-image">
-                        <img src="" class="logo-image__elem" alt="АФРОДИТА" />
-                </div>
+                <div class="logo-image logo--footer">АФРОДИТА</div>
                 
                 <div class="social-media">
                     <h3 class="social-media__text">Наши социальные сети</h3>
@@ -217,27 +228,27 @@
                     <ul class="social-media__list">
                         <li class="social-media__item">
                             <a href="#" class="social-media__logo"> 
-                                <img src="" class="social-media__logo-pic" alt="вк" /> 
+                                <img src="./img/vk.png" class="social-media__logo-pic" alt="вк" /> 
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="social-media__logo"> 
-                                <img src="" class="social-media__logo-pic" alt="fb" /> 
+                                <img src="./img/fb.png" class="social-media__logo-pic" alt="fb" /> 
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="social-media__logo"> 
-                                <img src="" class="social-media__logo-pic" alt="g+" /> 
+                                <img src="./img/google.png" class="social-media__logo-pic" alt="g+" /> 
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="social-media__logo"> 
-                                <img src="" class="social-media__logo-pic" alt="tw" /> 
+                                <img src="./img/twitter.png" class="social-media__logo-pic" alt="tw" /> 
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="social-media__logo"> 
-                                <img src="" class="social-media__logo-pic" alt="email" /> 
+                                <img src="./img/mail.png" class="social-media__logo-pic" alt="email" /> 
                             </a>
                         </li>
                     </ul>       
