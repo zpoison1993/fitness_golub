@@ -96,8 +96,9 @@ body {
 .container--header{
     display: flex;
     flex-flow: row nowrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .logo--header{
@@ -341,6 +342,46 @@ li.reviews__item {
     margin-top: 2px;
   }
 
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.pagination__display {
+    max-width: 120px;;
+    font-family: "roboto", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:  #656464;
+
+}
+
+.pagination__controlls {
+    max-height: 25px;
+    
+    font-family: "roboto", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: Bold;
+    color: #221f1f;
+} 
+
+ul.pagination__list {
+    display: flex;
+    min-width: 160 px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-inline-start: 0px;
+}
+
+
+
   /* footer*/
 .footer {
     width: 100%;
@@ -349,11 +390,19 @@ li.reviews__item {
     color: #ffffff;
 }
 
+.container--footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 .production {
     font-weight: 300;
     font-size: 14px;
     width: 240px;
-    padding-top: 15px;
+    
   }
 
 .production__text{
@@ -374,5 +423,37 @@ li.reviews__item {
     color: #898989;
     width: 550px;
     text-align: center;
-    margin-bottom: 5px; 
+    
 }
+
+.social-media {
+    width: 210px;
+}
+
+.social-media__text {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul.social-media__list {
+    display: flex;
+    /* justify-content: space-around; */
+    padding-inline-start: 0px;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+li.social-media__item {
+    width: 20px;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    margin-right: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+li.social-media__item:hover {
+    background-color: #f89513;
+  }
