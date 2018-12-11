@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gora';
+    src: url('./fonts/gora-free-webfont.woff2') format('woff2'),
+         url('./fonts/gora-free-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+
+body {
+    height: 100%;
+    margin:0;
+    font-family: "open_sans", Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.wrapper {
+    min-width: 1100px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 77px;
+    background: #131415;
+    color: #ffffff;
+
+}
+
+.container {
+    width: 1060px;
+    margin: 0 auto;  
+}
+
+.container--header{
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.logo--header{
+    max-width: 180px;
+    flex:1 1 360px;
+}
+
+.menu {
+    max-width: 360px;
+    flex: 1 1 360px;
+}
+
+ul.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-inline-start: 0px;
+}
+
+li.menu__item{
+    max-width: 33%;
+    flex: 1 1 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+.menu__link {
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color:inherit;
+}
+
+.menu__title{
+    width: 80px;
+}
+
+.menu__icon{
+    /*display: inline-block;*/
+    background: center center no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right:20px; 
+   
+}
+
+
+
+.menu__icon--main {
+    background-image: url(./img/main_icon.png)
+}
+
+.menu__icon--reviews {
+    background-image: url(./img/feed_icon.png)
+}
+
+.menu__icon--service {
+    background-image: url(./img/service_icon.png)
+}
+
+.menu__link:not(.menu__link--active):hover {
+    color: #f89513;
+}
+
+.contacts {
+    max-width: 180px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: right;
+}
+
+.logo-image {
+    font-family: 'gora';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+   text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #e98c13;
+
+}
+
+
+
+
+.contacts {
+   
+    /*margin-right: 20px;
+    margin-top:20px; 
+    text-align: right;*/
+    
+}
+.contacts__phone {
+    
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    font-style: normal;
+}
+.contacts__schedule {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: rgba(248, 149, 19, 0.8);
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: inherit;
+    text-align: inherit;
+}
+.contacts__schedule:hover {
+    color: #ffffff;
+  }
+
+.breadcrumbs {
+    margin: 45px 0 0 90px;
+}
+
+ul.breadcrumbs__list{
+    display: flex;
+    min-width: 125px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-inline-start: 0px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+li.breadcumbs__item{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.breadcrumbs_link {
+    color:inherit;
+
+}
+
+li.breadcumbs__item--separator, 
+li.breadcumbs__item--active {
+    color: #4d4d4d;   
+    font-weight: bold; 
+}
+
+
+
+
+.title {
+    max-height:55px;
+    /* text-align: center; */
+    /*margin-top: 65px;
+    font-family: open-sans;*/
+    font-weight: bold;
+    font-style: normal;
+    font-size: 49px;
+    letter-spacing: 1.5px;
+   color: #131415;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    margin: 30px 0 48px 90px;
+}
+
+ul.reviews__list {
+    display: inline-block;
+    width: 880px;
+    vertical-align: top;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li.reviews__item:not(:last-child) {
+    border-bottom: 2px solid #f5f5f5;
+  }
+
+li.reviews__item {
+    padding-bottom: 23px;
+  }
+
+  li.reviews__item:not(:first-child) {
+    padding-top: 23px;
+  }
+
+.reviews__image-pic {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    width: 167px;
+    height: 167px;
+}
+
+.reviews__image-pic--no {
+    background: #f5f5f5;
+    background-image: url(./img/prev.png) center center no-repeat;
+}
+
+.reviews__description {
+    display: inline-block;
+    width: 650px;
+    margin-left: 20px;
+    font-family: "roboto", Helvetica, sans-serif;
+    font-weight: 400;
+  }
+
+  .reviews__date {
+    font-size: 14px;
+    color: #656464;
+    font-weight: 300;
+  }
+
+  .reviews__heading {
+    font-size: 18px;
+    color: #221f1f;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    line-height: 21px;
+  }
+  
+.reviews__text {
+    font-size: 18px;
+    color: #221f1f;
+    font-style: normal;
+    line-height: 30px;
+    margin-top: 2px;
+  }
+
+  /* footer*/
+.footer {
+    width: 100%;
+    height: 75px;
+    background: #131415;
+    color: #ffffff;
+}
+
+.production {
+    font-weight: 300;
+    font-size: 14px;
+    width: 240px;
+    padding-top: 15px;
+  }
+
+.production__text{
+    margin: 0px;
+}
+  
+ .production__link {
+    font-weight: bold;
+    text-decoration: inherit;
+    color:inherit;
+  }
+  
+ .production__link--underlined {
+    text-decoration: underline;
+  }
+
+.logo--footer {
+    color: #898989;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 5px; 
+}
