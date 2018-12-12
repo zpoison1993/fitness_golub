@@ -474,6 +474,17 @@ ul.pagination__list {
     color: #f89513;
 }
 
+
+section.review-form {
+    background: #f5f5f5;
+    width: 701px;
+    height:427px;
+    margin: 61px auto;
+}
+.title--form {
+    margin: 52px 0 0 69px;
+}
+
   /* footer*/
 .footer {
     width: 100%;
