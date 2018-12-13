@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('./fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('./fonts/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gora';
+    src: url('./fonts/gora-free-webfont.woff2') format('woff2'),
+         url('./fonts/gora-free-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+
+body {
+    height: 100%;
+    margin:0;
+    font-family: "open_sans", Helvetica, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.wrapper {
+    min-width: 1100px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 77px;
+    background: #131415;
+    color: #ffffff;
+
+}
+
+.container {
+    width: 1060px;
+    margin: 0 auto;  
+}
+
+.container--header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo--header{
+    max-width: 180px;
+    flex:1 1 360px;
+}
+
+.menu {
+    max-width: 360px;
+    flex: 1 1 360px;
+}
+
+ul.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-inline-start: 0px;
+}
+
+li.menu__item{
+    max-width: 33%;
+    flex: 1 1 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+.menu__link {
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color:inherit;
+}
+
+.menu__title{
+    width: 80px;
+}
+
+.menu__icon{
+    /*display: inline-block;*/
+    background: center center no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right:20px; 
+   
+}
+
+
+
+.menu__icon--main {
+    background-image: url(./img/main_icon.png)
+}
+
+.menu__icon--reviews {
+    background-image: url(./img/feed_icon.png)
+}
+
+.menu__icon--service {
+    background-image: url(./img/service_icon.png)
+}
+
+.menu__link:not(.menu__link--active):hover {
+    color: #f89513;
+}
+
+.contacts {
+    max-width: 180px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: right;
+}
+
+.logo-image {
+    font-family: 'gora';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+   text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #e98c13;
+
+}
+
+
+
+
+.contacts {
+   
+    /*margin-right: 20px;
+    margin-top:20px; 
+    text-align: right;*/
+    
+}
+.contacts__phone {
+    
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    font-style: normal;
+}
+.contacts__schedule {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: rgba(248, 149, 19, 0.8);
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: inherit;
+    text-align: inherit;
+}
+.contacts__schedule:hover {
+    color: #ffffff;
+  }
+
+  .breadcrumbs {
+    margin: 45px 0 0 90px;
+}
+
+ul.breadcrumbs__list{
+    display: flex;
+    min-width: 125px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-inline-start: 0px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    /* color: #e98c13; */
+}
+
+li.breadcumbs__item{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #e98c13;
+    
+}
+
+a.breadcrumbs__link:active, /* активная/посещенная ссылка */
+a.breadcrumbs__link:hover,  /* при наведении */
+a.breadcrumbs__link {
+  /* text-decoration: none; */
+  color:inherit;
+}
+
+li.breadcumbs__item--separator, 
+li.breadcumbs__item--active {
+    color: #4d4d4d;   
+    font-weight: bold; 
+    margin-left: 5px;
+}
+
+
+
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    height: 75px;
+    background: #131415;
+    color: #ffffff;
+}
+
+.container--footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.production {
+    font-weight: 300;
+    font-size: 14px;
+    width: 240px;
+    
+  }
+
+.production__text{
+    margin: 0px;
+}
+  
+ .production__link {
+    font-weight: bold;
+    text-decoration: inherit;
+    color:inherit;
+  }
+  
+ .production__link--underlined {
+    text-decoration: underline;
+  }
+
+.logo--footer {
+    color: #e98c13;
+    width: 550px;
+    text-align: center;
+    
+}
+
+.social-media {
+    width: 210px;
+}
+
+.social-media__text {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul.social-media__list {
+    display: flex;
+    /* justify-content: space-around; */
+    padding-inline-start: 0px;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+}
+li.social-media__item {
+    width: 20px;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    margin-right: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+li.social-media__item:hover {
+    background-color: #f89513;
+  }
+
+
