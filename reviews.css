@@ -477,6 +477,7 @@ ul.pagination__list {
 
 section.review-form {
     background: #f5f5f5;
+    /* background: grey; */
     width: 701px;
     height:427px;
     margin: 61px auto;
