@@ -725,3 +725,7 @@ li.social-media__item {
 li.social-media__item:hover {
     background-color: #f89513;
   }
+
+.social-media__logo {
+    padding-bottom: 2px;
+}
