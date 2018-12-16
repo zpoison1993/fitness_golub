@@ -109,6 +109,9 @@ body {
 .menu {
     max-width: 360px;
     flex: 1 1 360px;
+    padding-top: 5px;
+    padding-left:27px;
+   
 }
 
 ul.menu__list{
@@ -122,7 +125,7 @@ ul.menu__list{
 }
 
 li.menu__item{
-    max-width: 33%;
+    max-width: 30%;
     flex: 1 1 100px;
     text-transform: uppercase;
     font-weight: bold;
@@ -164,9 +167,22 @@ li.menu__item{
     background-image: url(./img/service_icon.png)
 }
 
-.menu__link:not(.menu__link--active):hover {
+.menu__icon--main:hover {
+    background-image: url(./img/main_icon_hover.png);
     color: #f89513;
 }
+.menu__icon--service:hover {
+    background-image: url(./img/service_icon_hover.png);
+    color: #f89513;
+}
+.menu__link:not(.menu__link--active):hover {
+    color: #f89513;
+    
+}
+
+
+
+
 
 .contacts {
     max-width: 180px;
@@ -190,25 +206,20 @@ li.menu__item{
 
 
 
-.contacts {
-   
-    /*margin-right: 20px;
-    margin-top:20px; 
-    text-align: right;*/
-    
-}
+
 .contacts__phone {
     
     color: inherit;
     text-decoration: inherit;
     font-weight: bold;
     font-size: 21px;
+    
     font-style: normal;
 }
 .contacts__schedule {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(248, 149, 19, 0.8);
     font-weight: bold;
     text-decoration: underline;
@@ -220,7 +231,7 @@ li.menu__item{
   }
 
 .breadcrumbs {
-    margin: 45px 0 0 90px;
+    margin: 41px 0 0 93px;
 }
 
 ul.breadcrumbs__list{
@@ -271,12 +282,12 @@ li.breadcumbs__item--active {
     font-weight: bold;
     font-style: normal;
     font-size: 49px;
-    letter-spacing: 0.5px;
+    letter-spacing: 2.5px;
     color: #131415;
     margin-block-start: 0;
     margin-block-end: 0;
 
-    margin: 0px 0 48px 90px;
+    margin: 11px 0 42px 90px;
 }
 
 ul.reviews__list {
@@ -292,17 +303,19 @@ ul.reviews__list {
 }
 
 li.reviews__item:not(:last-child) {
+    padding-bottom: 7px;
     border-bottom: 2px solid #f5f5f5;
   }
 
 li.reviews__item {
     display: flex;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     align-content: space-around;
+    min-height: 190px;
   }
 
   li.reviews__item:not(:first-child) {
-    padding-top: 30px;
+    padding-top: 23px;
   }
 
 .reviews__image-pic {
@@ -338,9 +351,10 @@ li.reviews__item {
     font-size: 18px;
     color: #221f1f;
     font-weight: bold;
-    margin-top: 7px;
+    margin-top: 3px;
     margin-bottom: 10px;
     line-height: 21px;
+    letter-spacing: 0.07em;
   }
   
 .reviews__text {
@@ -348,7 +362,7 @@ li.reviews__item {
     color: #221f1f;
     font-style: normal;
     line-height: 30px;
-    margin-top: 2px;
+    margin-top: 0px;
   }
 
 
@@ -357,9 +371,10 @@ li.reviews__item {
     /* justify-content: space-between; */
     /* align-content: center; */
     width: 380px;
-    margin-top: 23px;
+    margin-top: 28px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 44px;
   }
 
 .pagination__display {
@@ -368,17 +383,18 @@ li.reviews__item {
     font-size: 14px;
     font-weight: 300;
     color:  #656464;
+    padding-top: 3px;
 
 }
 
-.pagination__controlls {
+/* .pagination__controlls {
     max-height: 25px;
-    
+    font-size: 12px;
     font-family: "roboto", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: Bold;
     color: #221f1f;
-} 
+}  */
 
 ul.pagination__list {
     display: flex;
@@ -387,17 +403,11 @@ ul.pagination__list {
     list-style-type: none;
     padding-inline-start: 0px;
     margin: 0;
-    
-}
-.pagination__controlls {
-    max-height: 25px;
-    
-    font-family: "roboto", Helvetica, sans-serif;
+    padding: 0 0 5px 5px;
     font-size: 14px;
-    font-weight: Bold;
-    color: #221f1f;
     
 }
+
 
 .pagination__prev-link{
     /* float: left; */
@@ -406,7 +416,7 @@ ul.pagination__list {
  
     /* background: url(./img/prev.png) center center no-repeat; */
     /* padding-top: 12.5px; */
-    /* margin-left: 23px; */
+    margin-left: 10px;
     background-image: url('./img/prev.png');
     background-size: auto;
     background-repeat: no-repeat;
@@ -423,8 +433,9 @@ ul.pagination__list {
     
     .pagination__item {
         width: 25px;
-        height: 25px;
+        height: 23px;
         text-align: center;
+        padding-top:2px;
       }
     
     .pagination__link:hover {
@@ -433,11 +444,12 @@ ul.pagination__list {
     
     .pagination__item--active {
         background: #27273e;
+        
         border-radius: 3px;
         
       }
     .pagination__link--active {
-        color: #ffffff;
+        color: #f89513;
       }
 
 .pagination__next-link{
@@ -455,7 +467,7 @@ ul.pagination__list {
 
 .apply-text {
     height: 171px;
-    margin-top: 60px;
+    margin-top: 55px;
     background: url(./img/background_repeat.png) repeat-x; /* Параметры фона */
     
 }
@@ -469,7 +481,8 @@ ul.pagination__list {
     font-style: normal;
     line-height: 30px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 22px;
+    padding-right:24px; 
 }
 
 .apply-text__wait {
@@ -482,63 +495,137 @@ form.review-form {
     background: #f5f5f5;
     /* background: grey; */
     width: 701px;
-    height:427px;
-    margin: 61px auto;
+    height:430px;
+    margin: 60px auto 60px auto;
     border-radius: 2px;
+    font-size: 13px;
     font-weight: 300;
 }
 .title--form {
     margin: 52px 0 0 69px;
     padding-top:37px;
+    letter-spacing: 0em;
 }
 
 .identification {
     width: 560px;
     display: flex;
     justify-content: space-between;
-    margin: 23px auto 0 auto;
+    margin: 21px auto 0 auto;
 }
 
 
 .identification  p {
-    margin: 0 0 10px 0;
+    margin: 0 0 3px 0;
+
+    
 }
 .your-name, .your-vk {
-    width: 270px;
+    width: 260px;
     height: 45px;
     border-radius: 2px;
-    border-width: 0;
+    padding-left:   10px;
+    border:1px solid #ccc;
     outline: none;
 }
+
 
 .review-create {
     width: 560px;
     margin: 0 auto;
 }
+
+.review-create p {
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
 .your-review {
     width: 560px;
-    height: 90px;
+    height: 86px;
     border-radius: 2px;
-    border-width: 0;
-    /* outline: none; */
+    border:1px solid #ccc;
+    outline: none;
 }
 
-.your-review:focus {
-    
-    border: 1px #f89513;
-}
+.your-name:focus, .your-vk:focus, .your-review:focus {
+    /* border-width: 1px; */
+    border-color: #f89513;
+    /* border: 1px solid #f89513 ; */
+    /* outline:: 1px #f89513; */
+} 
 
 .radio-and-submit {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 560px;
-    margin: 20px auto 0px auto;
+    margin: 12px auto 0px auto;
+}
+
+.form__label-box{
+    margin-bottom: 6px;
+    
+}
+
+.form__radio {
+
+	display: none;
+
 }
 
 
-.radio-buttons > p {
-    margin:0 0 10px 0;
+.form__radio-text {
+	font-size: 14px;
+	color: #221f1f;
+	vertical-align: super;
+	position: absolute;
+	top: 0px;
+    left: 25px;
+   
+    
+} 
+
+ .form__radio-custom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #cacaca;
+	position: relative;
+    margin-right: 35px;
+    
 }
+
+.form__radio:checked + .form__radio-custom:before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+    outline: none;
+	border-radius: 50%;
+	background-color: #f89513;
+
+}
+
+
+
+.form__radio:checked + .form__radio-custom {
+	border: 2px solid #f89513;
+
+
+}
+
+.form__radio:checked + .form__radio-custom .form__radio-text {
+	display: inline-block;
+	color: #f89513;
+
+
+}
+
 .submit {
     width: 125px;
     height: 45px;
@@ -547,8 +634,12 @@ form.review-form {
     color:  #f0f0f0;
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     border: none;
+    margin-top: 5px;
+}
+.submit:hover {
+    background: #f89513;
 }
 
 
@@ -563,7 +654,7 @@ form.review-form {
 .container--footer{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
 }
@@ -571,12 +662,13 @@ form.review-form {
 .production {
     font-weight: 300;
     font-size: 14px;
-    width: 240px;
-    
+    width: 20%;
+    padding-left: 0px; 
   }
 
 .production__text{
     margin: 0px;
+    width:240px;
 }
   
  .production__link {
@@ -591,22 +683,28 @@ form.review-form {
 
 .logo--footer {
     color: #e98c13;
-    width: 550px;
+    width: 20%;
     text-align: center;
+    margin: 0 24% 0 23%;
+  
     
 }
 
 .social-media {
-    width: 210px;
+    width: 20%;    
+    padding-left: 0px;
 }
 
 .social-media__text {
     margin: 0px;
     font-size: 14px;
     font-weight: bold;
+   
+    /* padding-left: 210px; */
 }
 
 ul.social-media__list {
+    
     display: flex;
     /* justify-content: space-around; */
     padding-inline-start: 0px;
