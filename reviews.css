@@ -160,7 +160,7 @@ li.menu__item{
 }
 
 .menu__icon--reviews {
-    background-image: url(./img/feed_icon.png)
+    background-image: url(./img/reviews_icon_hover.png)
 }
 
 .menu__icon--service {
@@ -180,6 +180,9 @@ li.menu__item{
     
 }
 
+.menu__link--active {
+    color: #f89513;
+}
 
 
 
@@ -466,7 +469,7 @@ ul.pagination__list {
 
 
 .apply-text {
-    height: 171px;
+    
     margin-top: 55px;
     background: url(./img/background_repeat.png) repeat-x; /* Параметры фона */
     
@@ -481,8 +484,8 @@ ul.pagination__list {
     font-style: normal;
     line-height: 30px;
     margin: auto;
-    padding-top: 22px;
-    padding-right:24px; 
+    padding: 22px 24px 32px 0;
+   
 }
 
 .apply-text__wait {
@@ -511,23 +514,35 @@ form.review-form {
     width: 560px;
     display: flex;
     justify-content: space-between;
-    margin: 21px auto 0 auto;
+    margin: 21px auto 15px auto;
+}
+.name, .vk {
+    width:48%;
 }
 
 
-.identification  p {
-    margin: 0 0 3px 0;
-
+#your-name, #your-vk {
+    min-width: 260px;
+    min-height: 40px;
+    border-radius: 2px;
     
+    padding-left:   10px;
+    border:1px solid #ccc;
+    outline: none;   
+    padding-bottom: 3px;
+    margin-top: 9px;
+
 }
-.your-name, .your-vk {
+
+
+/* .your-name, .your-vk {
     width: 260px;
     height: 45px;
     border-radius: 2px;
     padding-left:   10px;
     border:1px solid #ccc;
     outline: none;
-}
+} */
 
 
 .review-create {
@@ -535,19 +550,24 @@ form.review-form {
     margin: 0 auto;
 }
 
-.review-create p {
+/* label.id-label {
     margin-top: 16px;
     margin-bottom: 5px;
-}
-.your-review {
-    width: 560px;
+} */
+#your-review {
+    width: 550px;
     height: 86px;
     border-radius: 2px;
+    font-size: 16px;
     border:1px solid #ccc;
     outline: none;
+    padding-left: 8px;
+    padding-top:2px;
+    margin-top: 7px;
+
 }
 
-.your-name:focus, .your-vk:focus, .your-review:focus {
+#your-name:focus, #your-vk:focus, #your-review:focus {
     /* border-width: 1px; */
     border-color: #f89513;
     /* border: 1px solid #f89513 ; */
@@ -559,7 +579,7 @@ form.review-form {
     justify-content: space-between;
     align-items: flex-start;
     width: 560px;
-    margin: 12px auto 0px auto;
+    margin: 11px auto 0px auto;
 }
 
 .form__label-box{

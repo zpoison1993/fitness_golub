@@ -157,7 +157,7 @@ li.menu__item{
 
 
 .menu__icon--main {
-    background-image: url(./img/main_icon.png)
+    background-image: url(./img/main_icon_hover.png)
 }
 
 .menu__icon--reviews {
@@ -176,6 +176,12 @@ li.menu__item{
     background-image: url(./img/service_icon_hover.png);
     color: #f89513;
 }
+
+.menu__link--active {
+    color: #f89513;
+}
+
+
 .menu__link:not(.menu__link--active):hover {
     color: #f89513;
     
