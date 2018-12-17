@@ -109,6 +109,9 @@ body {
 .menu {
     max-width: 360px;
     flex: 1 1 360px;
+    padding-top: 5px;
+    padding-left:27px;
+   
 }
 
 ul.menu__list{
@@ -122,7 +125,7 @@ ul.menu__list{
 }
 
 li.menu__item{
-    max-width: 33%;
+    max-width: 30%;
     flex: 1 1 100px;
     text-transform: uppercase;
     font-weight: bold;
@@ -164,9 +167,22 @@ li.menu__item{
     background-image: url(./img/service_icon.png)
 }
 
-.menu__link:not(.menu__link--active):hover {
+.menu__icon--main:hover {
+    background-image: url(./img/main_icon_hover.png);
     color: #f89513;
 }
+.menu__icon--service:hover {
+    background-image: url(./img/service_icon_hover.png);
+    color: #f89513;
+}
+.menu__link:not(.menu__link--active):hover {
+    color: #f89513;
+    
+}
+
+
+
+
 
 .contacts {
     max-width: 180px;
@@ -190,25 +206,20 @@ li.menu__item{
 
 
 
-.contacts {
-   
-    /*margin-right: 20px;
-    margin-top:20px; 
-    text-align: right;*/
-    
-}
+
 .contacts__phone {
     
     color: inherit;
     text-decoration: inherit;
     font-weight: bold;
     font-size: 21px;
+    
     font-style: normal;
 }
 .contacts__schedule {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(248, 149, 19, 0.8);
     font-weight: bold;
     text-decoration: underline;
@@ -220,7 +231,7 @@ li.menu__item{
   }
 
   .breadcrumbs {
-    margin: 45px 0 0 90px;
+    margin: 41px 0 0 93px;
 }
 
 ul.breadcrumbs__list{
@@ -235,7 +246,7 @@ ul.breadcrumbs__list{
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
-    /* color: #e98c13; */
+   
 }
 
 li.breadcumbs__item{
@@ -244,7 +255,6 @@ li.breadcumbs__item{
     font-weight: 300;
     font-style: italic;
     color: #e98c13;
-    
 }
 
 a.breadcrumbs__link:active, /* активная/посещенная ссылка */
@@ -261,7 +271,169 @@ li.breadcumbs__item--active {
     margin-left: 5px;
 }
 
+.title {
+    max-height:55px;
+    /* text-align: center; */
+    /*margin-top: 65px;
+    font-family: open-sans;*/
+    font-weight: bold;
+    font-style: normal;
+    font-size: 49px;
+    letter-spacing: 2.5px;
+    color: #131415;
+    margin-block-start: 0;
+    margin-block-end: 0;
 
+    margin: 10px 0 45px 0px;
+}
+
+.services {
+    margin-left: 90px;
+    width: 89%;
+  }
+  
+ul.services__list {
+    display: flex;
+    width: 83%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-bottom: 10px;
+    }
+  
+  li.services__item {
+    max-width:  250px;
+    margin-bottom: 72px;
+  }
+  
+  .services__img {
+    
+    width: 250px;
+    height: 153px;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .services__img-pic {
+    width: inherit;
+    height: inherit;
+    background: center center no-repeat;
+    filter: brightness(40%);
+    border-radius: 3px;
+    transition: .5s;
+  }
+  
+  .services__img-pic--fitness {
+    background-image: url('./img/service_fitness.jpg');
+  }
+  
+  .services__img-pic--diet {
+    background-image: url('./img/service_diet.jpg');
+  }
+  
+  .services__img-pic--yoga {
+    background-image: url('./img/service_yoga.jpg');
+  }
+  
+  .services__img-pic--loop {
+    background-image: url('./img/service_loop.jpg');
+  }
+  
+  .services__img-pic--crossfit {
+    background-image: url('./img/service_crossfit.jpg');
+  }
+  
+  .services__img-pic--pool {
+    background-image: url('./img/service_pool.jpg');
+  }
+  
+  .services__img-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    
+    min-width: 70%;
+    transition: .5s;
+  }
+  
+  .services__img:hover .services__img-heading {
+    opacity: 0;
+  }
+  
+  .services__img:hover .services__img-pic {
+    filter: none;
+  }
+  
+  .services__content {
+    color: #221f1f;
+    width: 285px;
+  }
+  
+  .services__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .services__desc {
+    margin: 0px 0px 0px 0px;   
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+
+  }
+
+  .partners {
+    
+    width: 88%;
+ 
+  }
+  
+  .title--partners {
+    margin: -17px 0px 60px 91px;
+    max-height: 37px;
+  }
+  ul.partners__list {
+    
+    width:1060px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 42px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-left: 154px;
+  }
+  
+  li.partners__item {
+    /* flex: 1 0 250px; */
+    min-width: 15%;
+    margin-bottom: 50px;
+    margin-right: 13%;
+  }
+  
+  .partners__link {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+  }
+  
+  .partners__link:hover {
+    filter: none;
+  }
 
 
   /* Footer */
@@ -269,6 +441,7 @@ li.breadcumbs__item--active {
   .footer {
     width: 100%;
     height: 75px;
+    margin-top: 32px;
     background: #131415;
     color: #ffffff;
 }
@@ -284,7 +457,7 @@ li.breadcumbs__item--active {
 .production {
     font-weight: 300;
     font-size: 14px;
-    width: 240px;
+    width: 23%;
     
   }
 
@@ -304,13 +477,13 @@ li.breadcumbs__item--active {
 
 .logo--footer {
     color: #e98c13;
-    width: 550px;
+    width: 15%;
     text-align: center;
-    
+    margin-right: 60px;
 }
 
 .social-media {
-    width: 210px;
+    width: 17%;
 }
 
 .social-media__text {

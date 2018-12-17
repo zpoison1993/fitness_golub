@@ -315,7 +315,7 @@ li.reviews__item {
   }
 
   li.reviews__item:not(:first-child) {
-    padding-top: 23px;
+    padding-top: 25px;
   }
 
 .reviews__image-pic {
@@ -336,7 +336,7 @@ li.reviews__item {
 .reviews__description {
     /* display: inline-block; */
     width: 84%;
-    margin-left: 20px;
+    margin-left: 26px;
     font-family: "roboto", Helvetica, sans-serif;
     font-weight: 400;
   }
@@ -644,9 +644,10 @@ form.review-form {
 
 
   /* footer*/
-.footer {
+  .footer {
     width: 100%;
     height: 75px;
+    /* margin-top: 32px; */
     background: #131415;
     color: #ffffff;
 }
@@ -654,7 +655,7 @@ form.review-form {
 .container--footer{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
 }
@@ -662,13 +663,12 @@ form.review-form {
 .production {
     font-weight: 300;
     font-size: 14px;
-    width: 20%;
-    padding-left: 0px; 
+    width: 23%;
+    
   }
 
 .production__text{
     margin: 0px;
-    width:240px;
 }
   
  .production__link {
@@ -683,28 +683,23 @@ form.review-form {
 
 .logo--footer {
     color: #e98c13;
-    width: 20%;
+    width: 15%;
     text-align: center;
-    margin: 0 24% 0 23%;
-  
-    
+    margin-right: 60px;
 }
 
 .social-media {
-    width: 20%;    
-    padding-left: 0px;
+    width: 17%;
+    margin-left: 10px;
 }
 
 .social-media__text {
     margin: 0px;
     font-size: 14px;
     font-weight: bold;
-   
-    /* padding-left: 210px; */
 }
 
 ul.social-media__list {
-    
     display: flex;
     /* justify-content: space-around; */
     padding-inline-start: 0px;
@@ -725,7 +720,3 @@ li.social-media__item {
 li.social-media__item:hover {
     background-color: #f89513;
   }
-
-.social-media__logo {
-    padding-bottom: 2px;
-}
