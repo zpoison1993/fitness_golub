@@ -1,0 +1,13 @@
+/* logo */
+
+.logo-image {
+    font-family: 'gora';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+   text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #e98c13;
+}
+
+/*end of logo*/

@@ -1,0 +1,30 @@
+/* apply-text */
+
+.apply-text {
+    width:97.9%;
+    margin-top: 27px;
+    background: url(../../img/background_repeat2.png) repeat; /* Параметры фона */
+    padding: 22px 0 27px 0;
+}
+
+.apply-text__paragraph {
+    width: 80%;
+    font-family: 'roboto';
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;   
+}
+.apply-text__paragraph--2 {
+    margin-top: 2px;
+}
+
+.apply-text__wait {
+    font-weight: 700;
+    color: #f89513;
+    
+}
+/* end of apply-text */

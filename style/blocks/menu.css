@@ -1,0 +1,187 @@
+
+/* menu */
+.menu {
+    width: 100%;
+    /* flex: 1 1 360px;*/
+    margin-top: 35px;  
+}
+
+.menu--reviews {
+    margin-top:41px;
+}
+
+.menu--services {
+    margin-top:46px;
+}
+
+ul.menu__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li.menu__item{
+    max-width: 100%;
+    /* flex: 1 1 100px; */ 
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 23px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.menu--reviews li.menu__item{
+    margin-bottom:31px;
+    margin-left: 45px;
+}
+
+.menu--services li.menu__item{
+    margin-bottom:34px;
+    margin-left: 40px;
+}
+.menu__link{
+    /*display: inline-block;*/
+    /* width:50%; */
+    display: flex;
+    align-items: center;
+  
+    text-decoration: none; 
+    color:inherit;
+}
+
+.menu__title{
+    width: 87px;
+}
+
+.menu__icon{
+    /*display: inline-block;*/
+    background: url(../../img/sprites.png) no-repeat;
+    width: 21px;
+    height: 19px;
+    margin-right:17px; 
+   
+}
+
+
+.menu__list--main  .menu__link--active{
+    color: #f89513;
+}
+
+.menu__list--main .menu__icon--main {
+    /* background-image: url(../img/main_icon_hover.png); */
+    background-position: -10px -48px;
+}
+
+.menu__list--main .menu__icon--reviews {
+    /* background-image: url(../img/feed_icon2.png); */
+    background-position: -10px -10px;
+}
+
+.menu__list--main .menu__icon--services {
+    /* background-image: url(../img/service_icon2.png) */
+    background-position:-90px -44px;
+}
+
+.menu__list--main .menu__link--services:hover  .menu__icon--services {
+    /* background-image: url(../img/service_icon_hover.png); */
+    background-position:-90px -10px;
+}
+
+.menu__list--main .menu__link--services:hover .menu__title {
+    color: #f89513;
+}
+
+.menu__list--main .menu__link--reviews:hover  .menu__icon--reviews {
+    background-position:-50px -10px;
+}
+
+.menu__list--main .menu__link--reviews:hover .menu__title {
+    color: #f89513;
+}
+
+
+.menu__list--services .menu__link--active{
+    color: #f89513;
+}
+.menu__list--services .menu__icon--services {
+    /* background-image: url(../img/service_icon_hover.png); */
+    background-position:-90px -10px;
+}
+
+
+.menu__list--services .menu__icon--reviews {
+    /* background-image: url(../img/feed_icon2.png) */
+    background-position:-10px -10px;
+}
+
+.menu__list--services .menu__icon--main {
+    /* background-image: url(../img/main_icon2.png) */
+    background-position:-49px -48px;
+}
+
+.menu__list--services .menu__link--reviews:hover  .menu__icon--reviews {
+    /* background-image: url(../img/reviews_icon_hover.png); */
+    background-position:-50px -10px;
+}
+
+.menu__list--services .menu__link--reviews:hover .menu__title {
+    color: #f89513;
+}
+
+.menu__list--services .menu__link--main:hover  .menu__icon--main {
+    /* background-image: url(../img/main_icon_hover.png); */
+    background-position:-10px -48px;
+}
+
+.menu__list--services .menu__link--main:hover .menu__title {
+    color: #f89513;
+}
+
+
+
+
+.menu__list--reviews .menu__link--active{
+    color: #f89513;
+}
+.menu__list--reviews .menu__icon--reviews {
+    /* background-image: url(../img/reviews_icon_hover.png); */
+    background-position: -50px -10px;
+}
+
+
+.menu__list--reviews .menu__icon--main {
+    /* background-image: url(../img/main_icon2.png) */
+    background-position:-49px -48px;
+}
+
+.menu__list--reviews .menu__icon--services {
+    /* background-image: url(../img/service_icon2.png) */
+    background-position:-90px -44px;
+}
+
+
+.menu__list--reviews .menu__link--main:hover  .menu__icon--main {
+    /* background-image: url(../img/main_icon_hover.png); */
+    background-position:-10px -48px;
+}
+
+
+.menu__list--reviews .menu__link--main:hover .menu__title {
+    color: #f89513;
+}
+
+.menu__list--reviews .menu__link--services:hover  .menu__icon--services {
+    /* background-image: url(../img/service_icon_hover.png); */
+    background-position:-90px -10px;
+}
+
+.menu__list--reviews .menu__link--services:hover .menu__title {
+    color: #f89513;
+}
+/* end of menu */

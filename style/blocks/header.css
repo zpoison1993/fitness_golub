@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    /* height: 77px; */
+    background:#131415;
+    color: #ffffff;
+}
+
+.container--header{
+    display: flex;
+    /* flex-flow: row nowrap;
+    justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    padding: 19px 0;
+}
+
+
+.header__col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+.header__col--services {
+    padding-left:29px;
+}
+  
+.header__col--right {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}

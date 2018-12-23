@@ -1,0 +1,73 @@
+/* contacts */
+
+.contacts {
+    max-width: 180px;
+    flex: 1 1 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: right;
+}
+
+
+.contacts__phone {    
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+    font-size: 21px;
+    
+    font-style: normal;
+}
+.contacts__schedule {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: rgba(248, 149, 19, 0.8);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: inherit;
+    padding-top:0px;
+    position:relative;
+    /* font-family: inherit;
+    text-align: inherit; */
+}
+
+
+.contacts__schedule:hover {
+    color: #ffffff;
+  }
+
+  .dropdown:hover  .dropdown__list{
+    display: block;
+  }
+
+
+.dropdown__list {
+    position: absolute;
+    background:url(../../img/dropdown.png) center center no-repeat;
+    /* border: 1px solid grey; */
+    min-width:191px;
+    min-height: 104px;
+    top:61px;
+    /* display:block; */
+    padding-top:35px;
+    text-align: left;
+    color: #f89513;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28em;
+    font-style: normal;
+    display: none;
+}
+
+.work, .lunch {
+    margin-left: 18%;
+}
+
+.lunch {
+    font-weight: normal;
+    color:black;
+}
+
+
+
+/* end of contacts */

@@ -1,0 +1,100 @@
+/* social-media */
+
+.social-media {
+    width: 100%;    
+    padding-left: 0px;
+    text-align: center;
+    margin: 45px auto 0px 7px;
+}
+
+.social-media--reviews {
+    margin: 24px auto 0px -2px;
+}
+
+.social-media--services {
+    margin: 24px 0 0px -2px;
+}
+.social-media__text {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+   
+    /* padding-left: 210px; */
+}
+
+ul.social-media__list {
+    
+    display: flex;
+    justify-content: center;
+    /* padding-inline-start: 0px; */
+    margin: 13px 0 0 9px;
+    text-align: center;
+}
+
+ul.social-media__list--services {
+    margin: 14px 0 0 9px;
+}
+ul.social-media__list--reviews {
+    margin: 12px 0 0 20px;
+}
+
+li.social-media__item {
+    width: 21px;
+    height: 25px;
+    /* background-color: rgb(163, 163, 163); */
+    /* border-radius: 50%; */
+    margin-right: 9px; 
+
+    
+}  
+
+.social-media__link {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 2px;
+}
+.social__logo {
+    width: 100%;
+    height: 100%;
+    background: url('../../img/sprites.png') no-repeat;
+}
+
+.social__logo--vk {
+    background-position: -129px -10px;
+   margin-top:2px;
+}
+
+.social__logo--fb {
+    background-position: -129px -37px;
+    margin-left: 2px;
+}
+
+.social__logo--g {
+    background-position: -10px -82px;
+    margin-top: 1px;
+}
+
+.social__logo--tw {
+    background-position: -77px -82px;
+    margin-top:1px;
+}
+
+.social__logo--email {
+    background-position: -45px -82px;
+}
+
+/* li.social-media__item:hover {
+    background-color: #f89513;
+  } */
+
+.social-media__logo {
+    /* padding-bottom: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* end of social-media */

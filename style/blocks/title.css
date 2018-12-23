@@ -1,0 +1,31 @@
+/* title */
+.title {
+    /*max-height:55px;*/
+    /* text-align: center; */
+    /*margin-top: 65px;
+    font-family: open-sans;*/
+    font-weight: bold;
+    font-style: normal;
+    font-size: 49px;
+    letter-spacing: 1.5px;
+   color: #131415;
+}
+
+.title--news {
+   
+    margin-top: 9px;
+    margin-bottom: 35px;
+}
+
+.title--services {
+   
+    margin-top: 17px;
+    margin-bottom: 39px;
+}
+
+.title--reviews {
+   
+    margin: 17px 0 38px 19px;
+}
+
+/* end of title */

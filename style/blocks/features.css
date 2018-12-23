@@ -1,0 +1,55 @@
+/* features */
+.container--features {
+    width:98.5%;
+    border: 1px solid black;
+    padding-top:2px;
+    padding-bottom: 7px;   
+    
+}
+
+.title3 {
+   
+   
+    line-height: 1.2em;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    /* letter-spacing: 0.1em; */
+    margin-top: 16px;
+    text-align: center; 
+}
+
+.title3--partners {
+    margin-top: 28px;
+}
+.features__list-heading {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 27px 0 13px 0;
+    text-align: center; 
+  }
+
+
+.features__list-description {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;  
+    font-size: 18px;
+    line-height: 1.7em;
+    /* letter-spacing: 0.1em; */
+}
+
+ul.features__list-bullets {
+    width:70%;
+    margin:7px 0px 24px 56px;  
+}
+
+ul.features__list-bullets li {
+    list-style-type: disc;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 15px;  
+}
+/* end of features */
