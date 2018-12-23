@@ -27,23 +27,23 @@ ul.social-media__list {
     display: flex;
     justify-content: center;
     /* padding-inline-start: 0px; */
-    margin: 13px 0 0 9px;
+    margin: 6px 0 0 9px;
     text-align: center;
 }
 
 ul.social-media__list--services {
-    margin: 14px 0 0 9px;
+    margin: 9px 0 0 9px;
 }
 ul.social-media__list--reviews {
-    margin: 12px 0 0 20px;
+    margin: 8px 0 0 18px;
 }
 
 li.social-media__item {
     width: 20px;
     height: 20px;
-    background-color: rgb(163, 163, 163);
+    background-color: white;
     border-radius: 50%;
-    margin-right: 11px; 
+    margin-right: 12px; 
     transition: 0.5s;
     display: flex;
     
@@ -67,22 +67,22 @@ li.social-media__item {
 }
 
 .social__logo--fb {
-    background-position: -129px -37px;
-    margin-left: 2px;
+    background-position: -124px -33px;
+    /* margin-left: 2px; */
 }
 
 .social__logo--g {
-    background-position: -10px -82px;
-    margin-top: 1px;
+    background-position: -9px -77px;
+    /* margin-top: 1px; */
 }
 
 .social__logo--tw {
-    background-position: -77px -82px;
-    margin-top:1px;
+    background-position: -74px -76px;
+    /* margin-top:1px; */
 }
 
 .social__logo--email {
-    background-position: -45px -82px;
+    background-position: -41px -77px;
 }
 
 li.social-media__item:hover {

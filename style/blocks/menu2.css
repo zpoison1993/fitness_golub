@@ -1,0 +1,144 @@
+/* menu */
+.menu {
+    width: 100%;
+    margin-top: 39px;  
+}
+
+.menu--reviews {
+    margin-top:43px;
+}
+
+.menu--services {
+    margin-top:48px;
+}
+
+ul.menu__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li.menu__item{
+    max-width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    display: flex;
+    margin-bottom: 28px;
+
+}
+
+.menu__list--main li.menu__item:last-child {
+    margin-bottom: 22px;
+}
+
+.menu--reviews li.menu__item{
+    margin-bottom:37px;
+    margin-left: 45px;
+}
+
+.menu--services li.menu__item{
+    margin-bottom:39px;
+    margin-left: 40px;
+}
+.menu__link{
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    color:inherit;
+    margin-right: 13px;
+    transition: 0.5s;   
+}
+
+
+.menu__link--active {
+    color: #f89513;
+  }
+  
+.menu__icon {
+    position: relative;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+  
+.menu__icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-76%, -50%);
+    width: 20px;
+    height: 20px;
+    background: url('../../img/sprites.png') no-repeat;
+    transition: 0.5s;
+}
+
+
+.menu__icon--active:before {
+    opacity: 0;
+}
+  
+.menu__icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-76%, -50%);
+    width: 20px;
+    height: 20px;
+    background: url('../../img/sprites.png') no-repeat;
+    transition: 0.5s;
+    opacity: 0;
+}
+  
+.menu__icon--active:after {
+    opacity: 1;
+}
+
+  
+.menu__item:hover .menu__icon:not(.menu__icon--active):before {
+    opacity: 0;
+}
+  
+.menu__item:hover .menu__icon:not(.menu__icon--active):after {
+    opacity: 1;
+}
+  
+.menu__item:hover .menu__link {
+    color: #f89513;
+}
+
+
+.menu__icon--main:before {
+    background-position:-49px -48px;
+}
+  
+.menu__icon--main:after {
+    background-position: -10px -48px;
+}
+
+  
+.menu__icon--reviews:before {
+    background-position: -10px -10px;
+}
+  
+.menu__icon--reviews:after {
+    background-position:-50px -10px;
+}
+  
+.menu__icon--services:before {
+    background-position:-90px -44px;
+}
+  
+.menu__icon--services:after {
+    background-position:-90px -10px;
+}
+
+
+  
+  

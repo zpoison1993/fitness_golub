@@ -53,10 +53,12 @@ li.menu__item{
   
     text-decoration: none; 
     color:inherit;
+    
 }
 
 .menu__title{
     width: 87px;
+    transition: 0.5s;
 }
 
 .menu__icon{
@@ -65,7 +67,7 @@ li.menu__item{
     width: 21px;
     height: 19px;
     margin-right:17px; 
-   
+   transition: 0.5s;
 }
 
 

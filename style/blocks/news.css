@@ -47,7 +47,7 @@ li.news__item {
     display: inline-block;
     vertical-align: top;
     width: 195px;
-    /* height: 175px; */
+    height: 175px;
 }
 
 .news__description {
