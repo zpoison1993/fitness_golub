@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Афродита - Главная</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/main2.css">
 </head>
 
@@ -21,7 +22,15 @@
                     <address class="contacts">
                         <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
                         <!--поменял на кнопку-->
-                        <button class="contacts__schedule">График работы</button>
+                        <div class="dropdown">
+                            <button class="contacts__schedule">График работы</button>
+                            <div class="dropdown__list">
+                                <div  class="work">пн-вс: 09:00-20:00</div>
+                                <div class="lunch">обед: 14:00-14:30</div>
+                            </div>
+                        </div>
+
+
                     </address>
                 </div>
 
@@ -58,16 +67,16 @@
                         <div class="container container--features">
                             <h3 class="title3 ">ОСОБЕННОСТЬ</h3>
 
-                                    <div class="features__list-text">
-                                        <h4 class="features__list-heading">УНИКАЛЬНОСТЬ</h4>
-                                        <div class="features__list-description">Мы делаем все,</div>
-                                        <div class="features__list-description">для вашего комфорта</div>
-                                        <ul class="features__list-bullets">
-                                            <li>Питание включено</li>
-                                            <li>Багаж (5 кг)</li>
-                                            <li>Душ/Баня</li>
-                                        </ul>
-                                    </div>
+                            <div class="features__list-text">
+                                <h4 class="features__list-heading">УНИКАЛЬНОСТЬ</h4>
+                                <div class="features__list-description">Мы делаем все,</div>
+                                <div class="features__list-description">для вашего комфорта</div>
+                                <ul class="features__list-bullets">
+                                    <li>Питание включено</li>
+                                    <li>Багаж (5 кг)</li>
+                                    <li>Душ/Баня</li>
+                                </ul>
+                            </div>
 
                         </div>
                     </section>
@@ -93,28 +102,33 @@
 
                         <ul class="social-media__list">
                             <li class="social-media__item">
-                                <a href="#" class="social-media__logo">
-                                    <img src="./img/vk.png" class="social-media__logo-pic" alt="вк" />
+                                <a href="#" class="social-media__link">
+                                    <div class="social__logo social__logo--vk"></div>
+                                    <!-- <img src="./img/vk.png" class="social-media__logo-pic" alt="вк" /> -->
                                 </a>
                             </li>
                             <li class="social-media__item">
-                                <a href="#" class="social-media__logo">
-                                    <img src="./img/fb.png" class="social-media__logo-pic" alt="fb" />
+                                <a href="#" class="social-media__link">
+                                    <div class="social__logo social__logo--fb"></div>
+                                    <!-- <img src="./img/fb.png" class="social-media__logo-pic" alt="fb" /> -->
                                 </a>
                             </li>
                             <li class="social-media__item">
-                                <a href="#" class="social-media__logo">
-                                    <img src="./img/google.png" class="social-media__logo-pic" alt="g+" />
+                                <a href="#" class="social-media__link">
+                                    <div class="social__logo social__logo--g"></div>
+                                    <!-- <img src="./img/google.png" class="social-media__logo-pic" alt="g+" /> -->
                                 </a>
                             </li>
                             <li class="social-media__item">
-                                <a href="#" class="social-media__logo">
-                                    <img src="./img/twitter.png" class="social-media__logo-pic" alt="tw" />
+                                <a href="#" class="social-media__link">
+                                    <div class="social__logo social__logo--tw"></div>
+                                    <!-- <img src="./img/twitter.png" class="social-media__logo-pic" alt="tw" /> -->
                                 </a>
                             </li>
                             <li class="social-media__item">
-                                <a href="#" class="social-media__logo">
-                                    <img src="./img/mail.png" class="social-media__logo-pic" alt="email" />
+                                <a href="#" class="social-media__link">
+                                    <div class="social__logo social__logo--email"></div>
+                                    <!-- <img src="./img/mail.png" class="social-media__logo-pic" alt="email" /> -->
                                 </a>
                             </li>
                         </ul>
